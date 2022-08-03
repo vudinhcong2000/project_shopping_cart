@@ -1,0 +1,9 @@
+- react - slick
+
+z-index
+
+background vs background-color
+
+transition
+
+ransform
