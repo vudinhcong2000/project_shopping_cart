@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 
 const NextArrow = (props) => {
@@ -75,7 +75,7 @@ const FlashCard = ({ productItems, addToCart }) => {
                     <button>
                       <i
                         className="fa fa-plus"
-                        onClick={() => addToCart(productItems)}
+                        onClick={() => addToCart(item)}
                       ></i>
                     </button>
                   </div>
