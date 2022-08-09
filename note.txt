@@ -7,3 +7,6 @@ background vs background-color
 transition
 
 ransform
+
+
+boxshadow : rgb, rbga

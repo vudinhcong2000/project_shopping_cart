@@ -4,11 +4,14 @@ import "./App.css";
 import Header from "./common/Header/Header";
 import Pages from "./pages/Pages";
 import Data from "./common/components/flashDeals/Data";
+import Sdata from "./common/components/shop/Sdata";
 import Cart from "./common/cart/Cart";
+import Footer from "./common/footer/Footer";
 
 function App() {
   //fetch data from database
   const { productItems } = Data;
+  const { shopItems } = Sdata;
 
   const [cartItems, setCartItems] = useState([]);
 
@@ -53,6 +56,7 @@ function App() {
                 productItems={productItems}
                 addToCart={addToCart}
                 cartItems={cartItems}
+                shopItems={shopItems}
               />
             }
           />
@@ -67,6 +71,7 @@ function App() {
             }
           />
         </Routes>
+        <Footer />
       </Router>
     </>
   );
